@@ -14,7 +14,10 @@ let userRouter = require('./routes/userRoutes')
 let postRouter = require('./routes/postRoutes')
 let messageRouter = require('./routes/messageRoutes')
 
-app.use(cors())
+app.use(cors({
+    origin:'https://media-frontend-eta.vercel.app/',
+    credentials: true,
+}))
 app.use(express.json({ limit: '100mb' }))
 
 app.set('view engine', 'ejs')
