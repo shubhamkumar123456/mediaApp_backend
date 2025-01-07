@@ -15,7 +15,7 @@ let postRouter = require('./routes/postRoutes')
 let messageRouter = require('./routes/messageRoutes')
 
 app.use(cors({
-    origin:'https://media-frontend-1biyodtrv-shubhamkumar123456s-projects.vercel.app/',
+    origin:'https://mediaapp-backend-jodl.onrender.com',
     credentials: true,
     methods:['post','get','put','delete']
 }))
