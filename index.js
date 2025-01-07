@@ -17,6 +17,7 @@ let messageRouter = require('./routes/messageRoutes')
 app.use(cors({
     origin:'https://media-frontend-eta.vercel.app/',
     credentials: true,
+    methods:['post','get','put','delete']
 }))
 app.use(express.json({ limit: '100mb' }))
 
