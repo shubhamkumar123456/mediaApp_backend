@@ -165,7 +165,7 @@ function sendEmail(email , resetToken){
           from: 'shubhamfarainzi@gmail.com', // sender address
           to: email, // list of receivers
           subject: "Password reset Request", // Subject line
-          text: `Please click the link below to choose a new password: \n  "http://localhost:8080/api/users/resetToken/${resetToken}"`, // plain text body
+          text: `Please click the link below to choose a new password: \n  "https://mediaapp-backend-jodl.onrender.com/api/users/resetToken/${resetToken}"`, // plain text body
         
         });
       
